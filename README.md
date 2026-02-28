@@ -74,6 +74,7 @@
 - ##  Быстрый старт
 
 * * Ссылка на проект:* [agrosphere-blush.vercel.app](https://agrosphere-blush.vercel.app/)
+* * Ссылка на презентацию:* https://www.canva.com/design/DAHCn_wOB9Q/k8fc4ty4dfNIPm5HDnrJKw/edit?utm_content=DAHCn_wOB9Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 * * Вход в систему:* Любой логин (активен Demo Mode для жюри)
 * * Документация:* [Техническое описание в этом репозитории](#технологический-стек)
 
