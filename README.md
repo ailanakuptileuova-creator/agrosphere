@@ -1,23 +1,58 @@
-# AgroSphere AI - MVP
+#  AgroSphere AI | Satellite Intelligence for Precision Agriculture
 
-Satellite-powered AI platform for precision agriculture, carbon credit monitoring, and yield prediction.
+*AgroSphere AI* — это инновационная платформа на стыке AI и космических технологий, созданная для оптимизации сельского хозяйства, мониторинга вегетации и анализа экологических данных в реальном времени.
 
-## Features
-- **Auth System**: Secure login/registration.
-- **Satellite Layers**: NDVI, SAR, and Degradation risk.
-- **Time Horizons**: Past (10y), Present, and Future (AI Forecast).
-- **AI Assistant**: Gemini-powered agronomy advice.
-- **Carbon Engine**: CO2 sequestration credit calculator.
-- **Data Viz**: Interactive Plotly charts.
+---
 
-## Tech Stack
-- **Frontend**: React, Tailwind CSS, Framer Motion, Lucide Icons.
-- **Backend**: Node.js, Express, SQLite (better-sqlite3).
-- **AI**: Google Gemini API.
-- **Maps**: Leaflet.
-- **Charts**: Plotly.
+##  Обзор проекта
 
-## Setup
-1. `npm install`
-2. Set `GEMINI_API_KEY` in `.env`.
-3. `npm run dev`
+В условиях глобального изменения климата фермерам и агрономам необходимы точные инструменты для принятия решений. *AgroSphere AI* агрегирует спутниковые данные, анализирует их с помощью нейросетей и предоставляет понятные рекомендации по состоянию почв, посевов и рискам.
+
+### Основные проблемы, которые мы решаем:
+* *Недостаток данных:* Сложность получения оперативной информации о состоянии удаленных полей.
+* *Сложность анализа:* Обычному фермеру трудно интерпретировать индексы вроде NDVI.
+* *Риски урожайности:* Отсутствие прогнозов на основе ИИ.
+
+---
+
+##  Основные возможности
+
+* *Спутниковый мониторинг:* Визуализация полей с использованием интерактивных карт *Leaflet*.
+* *AI Ассистент:* Интегрированный чат на базе модели *Mixtral-8x7b* (через Groq SDK) для экспертных консультаций.
+* *NDVI Аналитика:* Анализ индекса вегетации для определения здоровья растений.
+* *Cloud Native:* Проект полностью готов к развертыванию на Vercel с автоматическим CI/CD.
+* *Безопасная авторизация:* Система JWT-токенов для защиты данных пользователей (Demo Mode активен для Vercel).
+
+---
+
+##  Технологический стек
+
+### Frontend
+* *React 19* — библиотека для построения динамичного пользовательского интерфейса.
+* *Tailwind CSS* — фреймворк для современной и адаптивной стилизации.
+* *Framer Motion* — анимации для плавного взаимодействия с пользователем.
+* *Lucide Icons* — минималистичный набор иконок.
+
+### Backend
+* *Node.js & Express* — серверная часть и создание REST API.
+* *TSX* — выполнение TypeScript кода в реальном времени.
+* *JWT (JSON Web Tokens)* — защита пользовательских сессий и авторизация.
+
+### База данных
+* *SQLite (better-sqlite3)* — высокопроизводительная встраиваемая БД для хранения данных.
+
+### Искусственный интеллект
+* *Groq SDK (Mixtral-8x7b)* — основная модель ИИ для агрономических консультаций.
+* *Google Gemini API* — дополнительный ИИ-движок для глубокого анализа данных.
+
+### Картография и визуализация
+* *Leaflet & React-Leaflet* — отображение интерактивных карт и спутниковых слоев.
+* *Plotly.js* — построение профессиональных графиков и аналитических диаграмм.
+
+---
+
+##  Быстрый старт
+* * Ссылка на проект:*(https://dynamic-vibrancy-production-a976.up.railway.app/)
+* * Вход в систему:* Любой логин (активен Demo Mode для жюри)
+* * Документация:* [Техническое описание в этом репозитории](#технологический-стек)
+* * Презентация:* (https://www.canva.com/design/DAHCn_wOB9Q/k8fc4ty4dfNIPm5HDnrJKw/edit?utm_content=DAHCn_wOB9Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
