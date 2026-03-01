@@ -33,7 +33,8 @@ export function AuthModal({ isOpen, onClose, onSuccess }: AuthModalProps) {
     setError('');
     setLoading(true);
 
-    const endpoint = isLogin ? '/api/auth/login' : '/api/auth/register';
+    const baseUrl = window.location.origin;
+    const endpoint = `${baseUrl}${isLogin ? '/api/auth/login' : '/api/auth/register'}`;
     try {
       const res = await fetch(endpoint, {
         method: 'POST',
