@@ -48,7 +48,7 @@ export function AIAssistant({ context, uiLanguage, authToken, onSessionCreated }
     setLoading(true);
 
     try {
-      const res = await fetch("/api/ai/analyze", {
+      const res = await fetch("/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -63,7 +63,7 @@ export function AIAssistant({ context, uiLanguage, authToken, onSessionCreated }
       });
 
       if (!res.ok) {
-        throw new Error(`HTTP ${res.status}`);
+        throw new Error(HTTP ${res.status});
       }
 
       const data = (await res.json()) as { text?: string; error?: string };
@@ -71,7 +71,7 @@ export function AIAssistant({ context, uiLanguage, authToken, onSessionCreated }
         typeof data.text === "string" && data.text.length > 0
           ? data.text
           : data.error
-          ? `Сервер вернул ошибку: ${data.error}`
+          ? Сервер вернул ошибку: ${data.error}
           : "Не удалось получить ответ от AI сервера.";
 
       setMessages((prev) => [...prev, { role: "ai", content: text }]);
@@ -83,10 +83,10 @@ export function AIAssistant({ context, uiLanguage, authToken, onSessionCreated }
             method: "POST",
             headers: {
               "Content-Type": "application/json",
-              Authorization: `Bearer ${authToken}`,
+              Authorization: Bearer ${authToken},
             },
             body: JSON.stringify({
-              location: `${context.location.lat.toFixed(4)}, ${context.location.lng.toFixed(4)}`,
+              location: ${context.location.lat.toFixed(4)}, ${context.location.lng.toFixed(4)},
               data: {
                 prompt: userContent,
                 response: text,
