@@ -55,4 +55,4 @@
 * * Ссылка на проект:*(https://dynamic-vibrancy-production-a976.up.railway.app/)
 * * Вход в систему:* Любой логин (активен Demo Mode для жюри)
 * * Документация:* [Техническое описание в этом репозитории](#технологический-стек)
-* * Презентация:* (https://www.canva.com/design/DAHCn_wOB9Q/k8fc4ty4dfNIPm5HDnrJKw/edit?utm_content=DAHCn_wOB9Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) / AgroSphere_pr.pdf
+* * Презентация:* (https://www.canva.com/design/DAHCn_wOB9Q/k8fc4ty4dfNIPm5HDnrJKw/edit?utm_content=DAHCn_wOB9Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) / [AgroSphere_pr.pdf](https://ailanakuptileuova-creator.github.io/agrosphere/agrosphere_pr.pdf)
